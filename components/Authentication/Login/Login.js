@@ -1,7 +1,8 @@
-import { View, Text, StyleSheet, Image } from 'react-native';
+import { View, Text, StyleSheet, Image, Alert } from 'react-native';
 import React from 'react';
 import {Input, Item, Form, Label } from 'native-base';
 import WeCareLogo from '../Opening/WeCareLogo';
+import RoundButton from '../Opening/RoundButton';
 
 function Login({ navigation}) {
     return (
@@ -33,6 +34,9 @@ function Login({ navigation}) {
                             <Input />
                         </Item>
                     </Form>
+                </View>
+                <View style={styles.button}>
+                    <RoundButton text="Đăng Nhập" onPress={() => navigation.navigate('Users')}/>
                 </View>
                 <View style={styles.cantLogin}>
                     <View style={styles.noAccount}>
@@ -94,6 +98,10 @@ const styles = StyleSheet.create({
     form:{
         marginLeft: 10,
         marginRight: 20
+    },
+    button: {
+        paddingTop: 10,
+        paddingHorizontal: 90
     },
     labelText: {
         fontSize: 16

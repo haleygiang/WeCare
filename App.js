@@ -8,10 +8,11 @@ import Age from './components/Authentication/Registration/Age';
 import DataPrivacy from './components/Authentication/Registration/DataPrivacy';
 import Register from './components/Authentication/Registration/Register';
 import Navigator from './routes/HomeStack'
-
+import Users from './components/Authentication/Profile/Users'
 function App(props) {
   return (
     <Navigator />
+    // <Users />
   );
 }
 
