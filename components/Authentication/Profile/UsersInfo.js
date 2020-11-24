@@ -22,7 +22,7 @@ function UsersInfo({ navigation }) {
                             <Icon name="arrow-forward" />
                         </Right>
                     </ListItem>
-                    <ListItem icon>
+                    <ListItem icon onPress={() => navigation.navigate('Health')}>
                         <Left>
                             <Icon active name="heart" />
                         </Left>
@@ -33,7 +33,7 @@ function UsersInfo({ navigation }) {
                             <Icon name="arrow-forward" />
                         </Right>
                     </ListItem>
-                    <ListItem icon>
+                    <ListItem icon onPress={() => navigation.navigate('Drugs')}>
                         <Left>
                             <Icon active name="clipboard" />
                         </Left>
@@ -44,7 +44,7 @@ function UsersInfo({ navigation }) {
                             <Icon name="arrow-forward" />
                         </Right>
                     </ListItem>
-                    <ListItem icon>
+                    <ListItem icon onPress={() => navigation.navigate('Allergy')}>
                         <Left>
                             <Icon active name="medkit" />
                         </Left>
@@ -55,7 +55,7 @@ function UsersInfo({ navigation }) {
                             <Icon name="arrow-forward" />
                         </Right>
                     </ListItem>
-                    <ListItem icon>
+                    <ListItem icon onPress={() => navigation.navigate('Disease')}>
                         <Left>
                             <Icon active name="pulse" />
                         </Left>
