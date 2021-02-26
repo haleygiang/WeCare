@@ -13,6 +13,8 @@ function App(props) {
   return (
     <Navigator />
     // <Users />
+    // <Opening />
+    // <Login/>
   );
 }
 
